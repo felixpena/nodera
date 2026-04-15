@@ -53,16 +53,16 @@ export default function Mission() {
             style={{
               display: "flex",
               flexDirection: "column",
-              gap: "1.5rem",
             }}
           >
             <p
               style={{
-                fontFamily: "var(--font-instrument-serif), serif",
-                fontSize: "16px",
+                fontFamily: "var(--font-space-mono), monospace",
+                fontSize: "15px",
                 fontWeight: 400,
-                lineHeight: 1.85,
-                color: "var(--warm-mid)",
+                lineHeight: 2,
+                letterSpacing: "0.04em",
+                color: "#9e9b90",
               }}
             >
               América del Sur tiene una concentración única de recursos
@@ -72,11 +72,13 @@ export default function Mission() {
             </p>
             <p
               style={{
-                fontFamily: "var(--font-instrument-serif), serif",
-                fontSize: "16px",
+                fontFamily: "var(--font-space-mono), monospace",
+                fontSize: "15px",
                 fontWeight: 400,
-                lineHeight: 1.85,
-                color: "var(--warm-mid)",
+                lineHeight: 2,
+                letterSpacing: "0.04em",
+                color: "#9e9b90",
+                marginTop: "20px",
               }}
             >
               Nodera Labs construye productos verticales de IA diseñados desde
