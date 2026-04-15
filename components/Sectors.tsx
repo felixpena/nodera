@@ -54,7 +54,7 @@ export default function Sectors() {
               >
                 <span
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "16px",
                     color: "var(--accent)",
                     opacity: 0.7,
                     lineHeight: 1,
@@ -65,7 +65,7 @@ export default function Sectors() {
                 <span
                   style={{
                     fontFamily: "var(--font-space-mono), monospace",
-                    fontSize: "0.55rem",
+                    fontSize: "11px",
                     color: "var(--earth)",
                     letterSpacing: "0.06em",
                   }}
@@ -78,10 +78,10 @@ export default function Sectors() {
               <span
                 style={{
                   fontFamily: "var(--font-space-mono), monospace",
-                  fontSize: "0.68rem",
+                  fontSize: "15px",
                   color: "var(--off-white)",
                   lineHeight: 1.4,
-                  letterSpacing: "0.02em",
+                  letterSpacing: "0.1em",
                 }}
               >
                 {sector}

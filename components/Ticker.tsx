@@ -37,9 +37,9 @@ export default function Ticker() {
               gap: 14,
               paddingRight: 14,
               fontFamily: "var(--font-space-mono), monospace",
-              fontSize: "0.6rem",
+              fontSize: "12px",
               color: "var(--warm-mid)",
-              letterSpacing: "0.1em",
+              letterSpacing: "0.22em",
               textTransform: "uppercase",
             }}
           >

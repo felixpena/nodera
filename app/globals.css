@@ -24,6 +24,7 @@
 }
 
 html {
+  font-size: 16px;
   background: var(--black);
   color: var(--off-white);
   scroll-behavior: smooth;
@@ -83,6 +84,7 @@ body {
   align-items: center;
   gap: 8px;
   cursor: default;
+  padding: 10px 14px;
 }
 .hero-sector-item .sector-dot {
   width: 4px;
@@ -93,10 +95,10 @@ body {
   transition: background 0.2s ease;
 }
 .hero-sector-item .sector-name {
-  font-size: 0.68rem;
+  font-size: 13px;
   color: var(--warm-mid);
   font-family: var(--font-space-mono), monospace;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
   transition: color 0.2s ease;
 }
 .hero-sector-item:hover .sector-dot {
@@ -109,7 +111,7 @@ body {
 /* ─── Approach cards ───────────────────────────────────── */
 .approach-card {
   background: var(--black);
-  padding: 28px 24px;
+  padding: 36px 28px;
   transition: background 0.2s ease;
 }
 .approach-card:hover {
@@ -120,7 +122,7 @@ body {
 .sector-card {
   position: relative;
   background: var(--surface);
-  padding: 24px 20px;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -179,13 +181,17 @@ body {
   background: transparent;
   color: var(--off-white);
   font-family: var(--font-space-mono), monospace;
-  font-size: 0.75rem;
-  padding: 10px 12px;
+  font-size: 15px;
+  padding: 14px 16px;
   width: 100%;
   outline: none;
   transition: border-color 0.2s ease;
   appearance: none;
   -webkit-appearance: none;
+}
+input.form-input,
+select.form-input {
+  height: 52px;
 }
 .form-input:focus {
   border-color: var(--accent);
@@ -205,10 +211,10 @@ select.form-input option {
   color: var(--accent);
   background: transparent;
   font-family: var(--font-space-mono), monospace;
-  font-size: 0.68rem;
-  letter-spacing: 0.1em;
+  font-size: 13px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  padding: 13px 24px;
+  padding: 18px 32px;
   cursor: pointer;
   width: 100%;
   transition: background 0.2s ease;
@@ -227,9 +233,9 @@ select.form-input option {
   align-items: center;
   gap: 12px;
   font-family: var(--font-space-mono), monospace;
-  font-size: 0.65rem;
+  font-size: 12px;
   color: var(--earth);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   margin-bottom: 48px;
 }
@@ -255,6 +261,7 @@ select.form-input option {
 @media (max-width: 768px) {
   .hero-grid {
     grid-template-columns: 1fr !important;
+    padding: 48px 24px !important;
   }
   .sectors-grid {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -264,11 +271,28 @@ select.form-input option {
   }
   .mission-grid {
     grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
   }
   .contact-grid {
     grid-template-columns: 1fr !important;
   }
   .nav-links {
     display: none !important;
+  }
+  /* Mobile typography floor */
+  .hero-sector-item .sector-name {
+    font-size: 14px;
+  }
+  .hero-sector-item {
+    padding: 8px 10px;
+  }
+  .approach-card {
+    padding: 28px 22px;
+  }
+  .sector-card {
+    padding: 22px 18px;
+  }
+  .section-label {
+    margin-bottom: 32px;
   }
 }

@@ -101,7 +101,7 @@ export default function Contact() {
             <p
               style={{
                 fontFamily: "var(--font-instrument-serif), serif",
-                fontSize: "clamp(20px, 2.2vw, 28px)",
+                fontSize: "clamp(28px, 3vw, 40px)",
                 lineHeight: 1.3,
                 fontWeight: 400,
                 color: "var(--off-white)",
@@ -113,8 +113,8 @@ export default function Contact() {
             <p
               style={{
                 fontFamily: "var(--font-space-mono), monospace",
-                fontSize: "0.68rem",
-                lineHeight: 1.9,
+                fontSize: "15px",
+                lineHeight: 1.85,
                 color: "var(--warm-mid)",
               }}
             >
@@ -147,7 +147,7 @@ export default function Contact() {
                 <p
                   style={{
                     fontFamily: "var(--font-space-mono), monospace",
-                    fontSize: "0.68rem",
+                    fontSize: "15px",
                     color: "var(--warm-mid)",
                     lineHeight: 1.8,
                   }}
@@ -177,11 +177,11 @@ export default function Contact() {
                       style={{
                         display: "block",
                         fontFamily: "var(--font-space-mono), monospace",
-                        fontSize: "0.55rem",
+                        fontSize: "11px",
                         color: "var(--earth)",
-                        letterSpacing: "0.12em",
+                        letterSpacing: "0.2em",
                         textTransform: "uppercase",
-                        marginBottom: 6,
+                        marginBottom: 8,
                       }}
                     >
                       Empresa *
@@ -204,11 +204,11 @@ export default function Contact() {
                       style={{
                         display: "block",
                         fontFamily: "var(--font-space-mono), monospace",
-                        fontSize: "0.55rem",
+                        fontSize: "11px",
                         color: "var(--earth)",
-                        letterSpacing: "0.12em",
+                        letterSpacing: "0.2em",
                         textTransform: "uppercase",
-                        marginBottom: 6,
+                        marginBottom: 8,
                       }}
                     >
                       Sector *
@@ -254,11 +254,11 @@ export default function Contact() {
                       style={{
                         display: "block",
                         fontFamily: "var(--font-space-mono), monospace",
-                        fontSize: "0.55rem",
+                        fontSize: "11px",
                         color: "var(--earth)",
-                        letterSpacing: "0.12em",
+                        letterSpacing: "0.2em",
                         textTransform: "uppercase",
-                        marginBottom: 6,
+                        marginBottom: 8,
                       }}
                     >
                       Nombre *
@@ -281,11 +281,11 @@ export default function Contact() {
                       style={{
                         display: "block",
                         fontFamily: "var(--font-space-mono), monospace",
-                        fontSize: "0.55rem",
+                        fontSize: "11px",
                         color: "var(--earth)",
-                        letterSpacing: "0.12em",
+                        letterSpacing: "0.2em",
                         textTransform: "uppercase",
-                        marginBottom: 6,
+                        marginBottom: 8,
                       }}
                     >
                       Email *
@@ -328,7 +328,7 @@ export default function Contact() {
                     value={form.desafio}
                     onChange={handleChange}
                     className="form-input"
-                    style={{ resize: "vertical", minHeight: 96 }}
+                    style={{ resize: "vertical", minHeight: 140 }}
                   />
                 </div>
 
@@ -337,7 +337,7 @@ export default function Contact() {
                   <p
                     style={{
                       fontFamily: "var(--font-space-mono), monospace",
-                      fontSize: "0.62rem",
+                      fontSize: "13px",
                       color: "#b87c5d",
                       marginBottom: "1rem",
                       letterSpacing: "0.04em",

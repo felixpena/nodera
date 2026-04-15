@@ -30,8 +30,8 @@ export default function Mission() {
           <p
             style={{
               fontFamily: "var(--font-instrument-serif), serif",
-              fontSize: "clamp(22px, 2.4vw, 32px)",
-              lineHeight: 1.3,
+              fontSize: "clamp(28px, 3.2vw, 44px)",
+              lineHeight: 1.2,
               fontWeight: 400,
               color: "var(--off-white)",
             }}
@@ -59,8 +59,9 @@ export default function Mission() {
             <p
               style={{
                 fontFamily: "var(--font-space-mono), monospace",
-                fontSize: "0.7rem",
+                fontSize: "15px",
                 lineHeight: 1.9,
+                letterSpacing: "0.03em",
                 color: "var(--warm-mid)",
               }}
             >
@@ -72,8 +73,9 @@ export default function Mission() {
             <p
               style={{
                 fontFamily: "var(--font-space-mono), monospace",
-                fontSize: "0.7rem",
+                fontSize: "15px",
                 lineHeight: 1.9,
+                letterSpacing: "0.03em",
                 color: "var(--warm-mid)",
               }}
             >

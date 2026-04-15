@@ -54,9 +54,9 @@ export default function Approach() {
               <p
                 style={{
                   fontFamily: "var(--font-space-mono), monospace",
-                  fontSize: "0.6rem",
+                  fontSize: "12px",
                   color: "var(--earth)",
-                  letterSpacing: "0.1em",
+                  letterSpacing: "0.18em",
                   marginBottom: "1.25rem",
                 }}
               >
@@ -67,9 +67,9 @@ export default function Approach() {
               <h3
                 style={{
                   fontFamily: "var(--font-instrument-serif), serif",
-                  fontSize: "1.125rem",
+                  fontSize: "22px",
                   fontWeight: 400,
-                  lineHeight: 1.25,
+                  lineHeight: 1.2,
                   color: "var(--off-white)",
                   marginBottom: "1rem",
                 }}
@@ -92,8 +92,9 @@ export default function Approach() {
               <p
                 style={{
                   fontFamily: "var(--font-space-mono), monospace",
-                  fontSize: "0.68rem",
+                  fontSize: "14px",
                   lineHeight: 1.85,
+                  letterSpacing: "0.03em",
                   color: "var(--warm-mid)",
                 }}
               >

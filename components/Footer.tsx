@@ -21,9 +21,9 @@ export default function Footer() {
         <span
           style={{
             fontFamily: "var(--font-space-mono), monospace",
-            fontSize: "0.55rem",
+            fontSize: "12px",
             color: "rgba(255,255,255,0.18)",
-            letterSpacing: "0.06em",
+            letterSpacing: "0.14em",
             textTransform: "uppercase",
           }}
         >
@@ -33,9 +33,9 @@ export default function Footer() {
         <span
           style={{
             fontFamily: "var(--font-space-mono), monospace",
-            fontSize: "0.55rem",
+            fontSize: "12px",
             color: "rgba(255,255,255,0.18)",
-            letterSpacing: "0.06em",
+            letterSpacing: "0.14em",
             textTransform: "uppercase",
           }}
         >

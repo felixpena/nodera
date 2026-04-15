@@ -104,7 +104,7 @@ export default function Hero() {
       style={{
         position: "relative",
         background: "var(--black)",
-        minHeight: "calc(100vh - 52px)",
+        minHeight: "calc(100vh - 64px)",
         overflow: "hidden",
         display: "flex",
         alignItems: "stretch",
@@ -136,9 +136,9 @@ export default function Hero() {
               alignItems: "center",
               gap: 12,
               fontFamily: "var(--font-space-mono), monospace",
-              fontSize: "0.6rem",
+              fontSize: "13px",
               color: "var(--accent)",
-              letterSpacing: "0.3em",
+              letterSpacing: "0.28em",
               textTransform: "uppercase",
               marginBottom: "2rem",
             }}
@@ -159,8 +159,8 @@ export default function Hero() {
           <h1
             style={{
               fontFamily: "var(--font-instrument-serif), serif",
-              fontSize: "clamp(48px, 6.5vw, 82px)",
-              lineHeight: 0.93,
+              fontSize: "clamp(64px, 8vw, 112px)",
+              lineHeight: 0.92,
               fontWeight: 400,
               marginBottom: "2.5rem",
             }}
@@ -199,12 +199,12 @@ export default function Hero() {
           <p
             style={{
               fontFamily: "var(--font-space-mono), monospace",
-              fontSize: "0.65rem",
+              fontSize: "14px",
               color: "var(--warm-mid)",
-              letterSpacing: "0.08em",
+              letterSpacing: "0.1em",
               textTransform: "uppercase",
               lineHeight: 1.8,
-              maxWidth: 480,
+              maxWidth: 540,
             }}
           >
             Productos con IA para los sectores que mueven la economía de
@@ -222,9 +222,9 @@ export default function Hero() {
           <p
             style={{
               fontFamily: "var(--font-space-mono), monospace",
-              fontSize: "0.6rem",
+              fontSize: "12px",
               color: "var(--earth)",
-              letterSpacing: "0.1em",
+              letterSpacing: "0.22em",
               textTransform: "uppercase",
               marginBottom: "1.25rem",
             }}

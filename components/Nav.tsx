@@ -14,7 +14,7 @@ export default function Nav() {
           maxWidth: 1200,
           margin: "0 auto",
           padding: "0 44px",
-          height: 52,
+          height: 64,
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -25,10 +25,11 @@ export default function Nav() {
           href="#"
           style={{
             fontFamily: "var(--font-instrument-serif), serif",
-            fontSize: "1.05rem",
+            fontSize: "16px",
+            fontWeight: 700,
             color: "var(--off-white)",
             textDecoration: "none",
-            letterSpacing: "0.01em",
+            letterSpacing: "0.18em",
           }}
         >
           Nodera
@@ -63,8 +64,8 @@ export default function Nav() {
                 className="nav-link"
                 style={{
                   fontFamily: "var(--font-space-mono), monospace",
-                  fontSize: "0.65rem",
-                  letterSpacing: "0.08em",
+                  fontSize: "13px",
+                  letterSpacing: "0.14em",
                   textTransform: "uppercase",
                 }}
               >
@@ -77,11 +78,11 @@ export default function Nav() {
           <span
             style={{
               fontFamily: "var(--font-space-mono), monospace",
-              fontSize: "0.6rem",
+              fontSize: "12px",
               color: "var(--accent)",
               border: "0.5px solid var(--accent)",
               borderRadius: 9999,
-              padding: "3px 10px",
+              padding: "6px 14px",
               letterSpacing: "0.08em",
               whiteSpace: "nowrap",
             }}
