@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens ────────────────────────────────────── */
+:root {
+  --black: #080907;
+  --surface: #0f100e;
+  --off-white: #eceae2;
+  --warm-mid: #9e9b90;
+  --accent: #b8c9a0;
+  --accent2: #d4e8b8;
+  --earth: #7a6e55;
+  --earth-light: #c4b896;
+}
+
+/* ─── Base ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--black);
+  color: var(--off-white);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: var(--off-white);
+  font-family: var(--font-space-mono), monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Ticker ───────────────────────────────────────────── */
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-track {
+  animation: ticker-scroll 22s linear infinite;
+  will-change: transform;
+  display: flex;
+  white-space: nowrap;
+  width: max-content;
+}
+
+/* ─── Nav ──────────────────────────────────────────────── */
+.nav-link {
+  color: var(--warm-mid);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.nav-link:hover {
+  color: var(--off-white);
+}
+
+/* ─── Hero ─────────────────────────────────────────────── */
+.hero-cta {
+  border: 0.5px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.hero-cta:hover {
+  background: var(--accent);
+  color: var(--black);
+}
+
+.hero-sector-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: default;
+}
+.hero-sector-item .sector-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--earth);
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+.hero-sector-item .sector-name {
+  font-size: 0.68rem;
+  color: var(--warm-mid);
+  font-family: var(--font-space-mono), monospace;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+}
+.hero-sector-item:hover .sector-dot {
+  background: var(--accent);
+}
+.hero-sector-item:hover .sector-name {
+  color: var(--off-white);
+}
+
+/* ─── Approach cards ───────────────────────────────────── */
+.approach-card {
+  background: var(--black);
+  padding: 28px 24px;
+  transition: background 0.2s ease;
+}
+.approach-card:hover {
+  background: var(--surface);
+}
+
+/* ─── Sector cards ─────────────────────────────────────── */
+.sector-card {
+  position: relative;
+  background: var(--surface);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: background 0.2s ease;
+  overflow: hidden;
+}
+.sector-card:hover {
+  background: #141610;
+}
+.sector-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+.sector-card:hover::after {
+  width: 100%;
+}
+
+/* ─── Contact box ──────────────────────────────────────── */
+.contact-box {
+  position: relative;
+  border: 0.5px solid rgba(184, 201, 160, 0.18);
+  padding: 40px;
+}
+.contact-box::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 28px;
+  height: 28px;
+  border-top: 0.5px solid var(--accent);
+  border-left: 0.5px solid var(--accent);
+  pointer-events: none;
+}
+.contact-box::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 28px;
+  height: 28px;
+  border-bottom: 0.5px solid var(--accent);
+  border-right: 0.5px solid var(--accent);
+  pointer-events: none;
+}
+
+/* ─── Form fields ──────────────────────────────────────── */
+.form-input {
+  border: 0.5px solid var(--earth);
+  background: transparent;
+  color: var(--off-white);
+  font-family: var(--font-space-mono), monospace;
+  font-size: 0.75rem;
+  padding: 10px 12px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.form-input:focus {
+  border-color: var(--accent);
+}
+.form-input::placeholder {
+  color: var(--warm-mid);
+  opacity: 0.5;
+}
+select.form-input option {
+  background: var(--black);
+  color: var(--off-white);
+}
+
+/* ─── Submit button ────────────────────────────────────── */
+.submit-btn {
+  border: 0.5px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  font-family: var(--font-space-mono), monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 24px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+.submit-btn:hover:not(:disabled) {
+  background: rgba(184, 201, 160, 0.06);
+}
+.submit-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ─── Section labels ───────────────────────────────────── */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-space-mono), monospace;
+  font-size: 0.65rem;
+  color: var(--earth);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+.section-label::after {
+  content: "";
+  flex: 1;
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* ─── Scrollbar ────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--earth);
+}
+
+/* ─── Responsive ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .sectors-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .approach-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .mission-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .nav-links {
+    display: none !important;
+  }
+}
