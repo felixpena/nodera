@@ -19,7 +19,9 @@ export default function Sectors() {
       id="sectores"
       style={{
         background: "var(--black)",
-        padding: "80px 44px",
+        paddingBottom: "80px",
+        paddingLeft: "44px",
+        paddingRight: "44px",
         borderTop: "0.5px solid rgba(255,255,255,0.04)",
       }}
     >
@@ -30,7 +32,9 @@ export default function Sectors() {
         }}
       >
         {/* Section label */}
-        <div className="section-label">03 — Sectores</div>
+        <div className="section-label" style={{ paddingTop: "48px" }}>
+          03 — Sectores
+        </div>
 
         {/* Cards grid — 1px gap trick */}
         <div

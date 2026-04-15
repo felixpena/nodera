@@ -3,7 +3,7 @@ export default function Footer() {
     <footer
       style={{
         background: "var(--black)",
-        borderTop: "0.5px solid rgba(255,255,255,0.07)",
+        borderTop: "0.5px solid rgba(255,255,255,0.12)",
         padding: "28px 44px",
       }}
     >
@@ -21,8 +21,8 @@ export default function Footer() {
         <span
           style={{
             fontFamily: "var(--font-space-mono), monospace",
-            fontSize: "12px",
-            color: "rgba(255,255,255,0.18)",
+            fontSize: "13px",
+            color: "var(--earth)",
             letterSpacing: "0.14em",
             textTransform: "uppercase",
           }}
@@ -33,8 +33,8 @@ export default function Footer() {
         <span
           style={{
             fontFamily: "var(--font-space-mono), monospace",
-            fontSize: "12px",
-            color: "rgba(255,255,255,0.18)",
+            fontSize: "13px",
+            color: "var(--earth)",
             letterSpacing: "0.14em",
             textTransform: "uppercase",
           }}

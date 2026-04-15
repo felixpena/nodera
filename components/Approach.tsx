@@ -25,7 +25,7 @@ export default function Approach() {
       id="enfoque"
       style={{
         background: "var(--surface)",
-        padding: "80px 44px",
+        padding: "80px 44px 48px",
         borderTop: "0.5px solid rgba(255,255,255,0.04)",
       }}
     >

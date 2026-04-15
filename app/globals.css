@@ -234,7 +234,8 @@ select.form-input option {
   gap: 12px;
   font-family: var(--font-space-mono), monospace;
   font-size: 12px;
-  color: var(--earth);
+  font-weight: 400;
+  color: var(--warm-mid);
   letter-spacing: 0.28em;
   text-transform: uppercase;
   margin-bottom: 48px;

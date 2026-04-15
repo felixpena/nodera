@@ -58,10 +58,10 @@ export default function Mission() {
           >
             <p
               style={{
-                fontFamily: "var(--font-space-mono), monospace",
-                fontSize: "15px",
-                lineHeight: 1.9,
-                letterSpacing: "0.03em",
+                fontFamily: "var(--font-instrument-serif), serif",
+                fontSize: "16px",
+                fontWeight: 400,
+                lineHeight: 1.85,
                 color: "var(--warm-mid)",
               }}
             >
@@ -72,10 +72,10 @@ export default function Mission() {
             </p>
             <p
               style={{
-                fontFamily: "var(--font-space-mono), monospace",
-                fontSize: "15px",
-                lineHeight: 1.9,
-                letterSpacing: "0.03em",
+                fontFamily: "var(--font-instrument-serif), serif",
+                fontSize: "16px",
+                fontWeight: 400,
+                lineHeight: 1.85,
                 color: "var(--warm-mid)",
               }}
             >
