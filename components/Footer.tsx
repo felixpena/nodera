@@ -22,7 +22,7 @@ export default function Footer() {
           style={{
             fontFamily: "var(--font-space-mono), monospace",
             fontSize: "13px",
-            color: "var(--earth)",
+            color: "var(--earth-light)",
             letterSpacing: "0.14em",
             textTransform: "uppercase",
           }}
@@ -34,7 +34,7 @@ export default function Footer() {
           style={{
             fontFamily: "var(--font-space-mono), monospace",
             fontSize: "13px",
-            color: "var(--earth)",
+            color: "var(--earth-light)",
             letterSpacing: "0.14em",
             textTransform: "uppercase",
           }}

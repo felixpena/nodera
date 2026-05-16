@@ -198,7 +198,7 @@ select.form-input {
 }
 .form-input::placeholder {
   color: var(--warm-mid);
-  opacity: 0.5;
+  opacity: 1;
 }
 select.form-input option {
   background: var(--black);

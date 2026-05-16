@@ -223,7 +223,7 @@ export default function Hero() {
             style={{
               fontFamily: "var(--font-space-mono), monospace",
               fontSize: "12px",
-              color: "var(--earth)",
+              color: "var(--earth-light)",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
               marginBottom: "1.25rem",

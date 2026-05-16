@@ -70,7 +70,7 @@ export default function Sectors() {
                   style={{
                     fontFamily: "var(--font-space-mono), monospace",
                     fontSize: "11px",
-                    color: "var(--earth)",
+                    color: "var(--earth-light)",
                     letterSpacing: "0.06em",
                   }}
                 >

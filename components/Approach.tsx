@@ -55,7 +55,7 @@ export default function Approach() {
                 style={{
                   fontFamily: "var(--font-space-mono), monospace",
                   fontSize: "12px",
-                  color: "var(--earth)",
+                  color: "var(--earth-light)",
                   letterSpacing: "0.18em",
                   marginBottom: "1.25rem",
                 }}
