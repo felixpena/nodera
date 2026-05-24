@@ -247,6 +247,20 @@ select.form-input option {
   background: rgba(255, 255, 255, 0.07);
 }
 
+/* ─── Sfumato badge ────────────────────────────────────── */
+.sfumato-badge {
+  font-family: var(--font-space-mono), monospace;
+  font-size: 11px;
+  color: var(--earth);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.sfumato-badge:hover {
+  color: var(--earth-light);
+}
+
 /* ─── Scrollbar ────────────────────────────────────────── */
 ::-webkit-scrollbar {
   width: 3px;
