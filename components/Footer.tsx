@@ -42,6 +42,24 @@ export default function Footer() {
           Santiago, Chile · América del Sur
         </span>
       </div>
+
+      <div
+        style={{
+          borderTop: "0.5px solid rgba(255,255,255,0.06)",
+          marginTop: "20px",
+          paddingTop: "16px",
+          textAlign: "center",
+        }}
+      >
+        <a
+          href="https://www.sfumato.design"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sfumato-badge"
+        >
+          Diseñado por SFUMATO
+        </a>
+      </div>
     </footer>
   );
 }
