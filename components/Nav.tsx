@@ -74,21 +74,6 @@ export default function Nav() {
             ))}
           </div>
 
-          {/* Stealth pill */}
-          <span
-            style={{
-              fontFamily: "var(--font-space-mono), monospace",
-              fontSize: "12px",
-              color: "var(--accent)",
-              border: "0.5px solid var(--accent)",
-              borderRadius: 9999,
-              padding: "6px 14px",
-              letterSpacing: "0.08em",
-              whiteSpace: "nowrap",
-            }}
-          >
-            Stealth · 2025
-          </span>
         </div>
       </div>
     </nav>
